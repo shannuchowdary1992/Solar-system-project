@@ -58,7 +58,7 @@ async function seedPlanets() {
 }
 
 // Call this once to seed data
-# seedPlanets();
+// seedPlanets();
 
 app.post('/planet', function(req, res) {
     planetModel.findOne({
