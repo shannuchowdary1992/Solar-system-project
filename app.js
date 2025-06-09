@@ -13,7 +13,7 @@ app.use(cors())
 
 mongoose.connect('mongodb+srv://shanmukhamchowdary:pqP522VYEzZWFHGq@cluster0.orrajh6.mongodb.net/', {
     user: 'shanmukhamchowdary',
-    pass: 'ynOf9mfznmdEvdXb',,
+    pass: 'ynOf9mfznmdEvdXb',
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, function(err) {
