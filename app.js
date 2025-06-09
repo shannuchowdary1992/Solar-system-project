@@ -11,9 +11,9 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '/')));
 app.use(cors())
 
-mongoose.connect(echo 'process.env.MONGO_URI', {
-    user: echo 'process.env.MONGO_USERNAME',
-    pass: echo 'process.env.MONGO_PASSWORD',
+mongoose.connect('mongodb+srv://shanmukhamchowdary:pqP522VYEzZWFHGq@cluster0.orrajh6.mongodb.net/', {
+    user: 'shanmukhamchowdary',
+    pass: 'ynOf9mfznmdEvdXb',,
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, function(err) {
