@@ -110,4 +110,4 @@ jobs:
         echo $IP
 
         echo Testing Image URL using wget
-        wget -q -O localhost:3000/live | grep live
+        wget -q -O - http://localhost:3000/live | grep live
