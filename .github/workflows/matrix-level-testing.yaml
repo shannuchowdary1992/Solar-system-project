@@ -13,6 +13,17 @@ env:
 jobs: 
   unit-testing:
     name: Unit Testing
+    services: 
+      mongo-db:
+        image: shannu1434/mongo-db:non-prod
+        ports:
+          - 27017:27017
+
+    env: 
+      MONGODB_URI: 'mongodb//localhost:27017/superData'
+      MONGODB_USERNAME: non-prod-user
+      MONGODB_PASSWORD: non-prod-password
+
     runs-on: ubuntu-latest
     steps: 
     - name: checkout Repository
