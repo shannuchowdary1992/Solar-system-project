@@ -20,7 +20,7 @@ jobs:
           - 27017:27017
 
     env: 
-      MONGODB_URI: 'mongodb//localhost:27017/superData'
+      MONGODB_URI: 'mongodb://localhost:27017/superData'
       MONGODB_USERNAME: non-prod-user
       MONGODB_PASSWORD: non-prod-password
 
