@@ -162,6 +162,9 @@ jobs:
     steps:
     - name: Checkout 
       uses: actions/checkout@v4
+      
+    - name: Create KinD cluster
+        uses: helm/kind-action@v1
 
     - name: Install kubectl 
       uses: azure/setup-kubectl@v4
