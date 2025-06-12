@@ -62,7 +62,7 @@ jobs:
       mongo-db:
         image: shannu1434/mongo-db:non-prod
         options: 
-          -- name mongo
+          --name mongo
 
     env: 
       MONGODB_URI: 'mongodb://mongo:27017/superData'
