@@ -176,3 +176,6 @@ jobs:
         kubectl version --short
         echo -----------------------------
         kubectl get nodes
+        
+    - name: Show current kubectl context
+      run: kubectl config current-context
