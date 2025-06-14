@@ -176,6 +176,16 @@ jobs:
         kubectl version --short
         echo -----------------------------
         kubectl get nodes
-        
+
     - name: Show current kubectl context
       run: kubectl config current-context
+    
+    - name: Replace tokens in manifest files
+      uses: cschleiden/replace-tokens@v1
+      with:
+        tokenPrefix: '_{_'
+        tokenSuffix: '_}_'
+        files: '["kubernetes/development/deployment.yaml"]'
+
+    - name: runcmds
+      run: kubectl get deployment
