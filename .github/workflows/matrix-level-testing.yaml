@@ -181,7 +181,7 @@ jobs:
       run: kubectl config current-context
     
     - name: deployment yaml file
-      run: kubectl create -f deployment.yaml
+      run: kubectl create -f shannuchowdary1992/Solar-system-project/kubernetes/development/deployment.yaml
 
     - name: runcmds
       run: kubectl get deploy
